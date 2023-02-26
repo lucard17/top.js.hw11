@@ -174,7 +174,7 @@ function updateForecast(weather) {
 function getWeather(position = "", forecast = false, callback) {
     const request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
     const requestURL =
-        "http://api.openweathermap.org/data/2.5/" +
+        "https://api.openweathermap.org/data/2.5/" +
         (forecast ? "forecast" : "weather") +
         "?lat=" + position.lat +
         "&lon=" + position.lon +
