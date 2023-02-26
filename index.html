@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Николаев. JS. WH11</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <h1 style="text-align: center">WEB221. Николаев. JS. WH11</h1>
+  <div class="container">
+    <section class="header">
+      <h3>current weather</h3>
+      <div>
+        <div class="inputWrapper" id="searchBlock">
+          <input type="text" name="city" value="" placeholder="Enter city name" id="cityInput" />
+          <div class="inputTipsWrapper">
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="currentWeather">
+      <div class="sectionHeader">
+        <p id="city">Moscow</p>
+        <p id="date">00.00.0000</p>
+      </div>
+      <div class="currentWeatherWrapper">
+        <div>
+          <p id="currentDescription" class="center">Sunny</p>
+          <img id="currentIcon" src="" alt="" />
+        </div>
+
+        <div id="currentTemp">30&degС</div>
+
+        <div class="currentParam">
+          <table>
+            <tbody>
+              <tr>
+                <td>Min temperature</td>
+                <td id="currentMinTemp">30&degС</td>
+              </tr>
+              <tr>
+                <td>Max temperature</td>
+                <td id="currentMaxTemp">30&degС</td>
+              </tr>
+              <tr>
+                <td>Wind speed (km/h)</td>
+                <td id="currentWind">0.0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="hourWeather">
+      <div class="sectionHeader">
+        <p>Hourly</p>
+      </div>
+      <div class="hourWeatherWrapper">
+        <div class="hourDescription">
+          <div>
+            <p id="forecastDayName">today</p>
+          </div>
+          <div>
+            <p>Forecast</p>
+            <p>Temp (&deg;C)</p>
+            <p>Wind (km/h)</p>
+          </div>
+        </div>
+        <div class="hour">
+          <div>
+            <p class="time">00:00</p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p class="description"></p>
+            <p class="temp"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="hour">
+          <div>
+            <p class="time">00:00</p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p class="description"></p>
+            <p class="temp"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="hour">
+          <div>
+            <p class="time">00:00</p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p class="description"></p>
+            <p class="temp"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="hour">
+          <div>
+            <p class="time">00:00</p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p class="description"></p>
+            <p class="temp"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="hour">
+          <div>
+            <p class="time">00:00</p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p class="description"></p>
+            <p class="temp"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+        <div class="hour">
+          <div>
+            <p class="time">00:00</p>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <p class="description"></p>
+            <p class="temp"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <section></section>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

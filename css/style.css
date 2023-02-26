@@ -1,0 +1,179 @@
+:root {
+    --color: rgb(255, 255, 255);
+    --bg-color: rgb(32, 30, 36);
+    --hover-color: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--color);
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.header,
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionHeader {
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.4em;
+    border-bottom: 1px solid;
+}
+
+h1 {
+    margin: 1.5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin: unset;
+}
+
+.inputWrapper {
+    position: relative;
+}
+
+.inputWrapper a {
+    color: unset;
+}
+
+#cityInput, .inputTip {
+    border: unset;
+    border-bottom: 2px solid;
+    padding: 0.2rem;
+    outline: unset;
+    min-width: 25em;
+}
+
+#cityInput.invalid {
+    color: red;
+    border-color: red;
+}
+
+.inputTipsWrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-top: 0.2rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.inputTip {
+    border: 1px solid transparent;
+    text-align: left;
+}
+.inputTip:hover{
+    border-bottom-color: 1px solid var(--color);
+
+}
+.inputTipsWrapper.show {
+    /*display: block;*/
+}
+
+/*button {*/
+/*  margin-left: 0.5rem;*/
+/*  border: unset;*/
+/*  background-color: unset;*/
+/*  padding: 0.2rem;*/
+/*  border: 1px solid transparent;*/
+/*}*/
+input:hover,.inputTip:hover {
+    background-color: var(--hover-color);
+}
+
+
+.header,
+#currentWeather,
+#hourWeather {
+    /* border: 1px solid; */
+    padding: 1.5rem 2rem 2rem;
+}
+
+#currentWeather,
+#hourWeather {
+    border-top: unset;
+}
+
+#hourWeather .sectionHeader,
+#currentWeather .sectionHeader {
+    font-weight: bold;
+}
+
+.currentWeatherWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#city,
+#currentDescription {
+    text-transform: capitalize;
+}
+
+#currentTemp {
+    font-weight: 400;
+    font-size: 4rem;
+    align-self: center;
+}
+
+.currentParam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.currentParam tr td:first-child {
+    padding-right: 2rem;
+}
+
+.currentParam tr td:last-child {
+    text-align: right;
+}
+
+.currentParam tr:not(:last-child) td {
+    padding-bottom: 1.5rem;
+}
+
+#currentDescription {
+    font-weight: bold;
+}
+
+#forecastDay {
+    font-weight: bold;
+}
+
+.hourWeatherWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hourWeatherWrapper [class^="hour"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hour p {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.hour .time {
+    font-weight: bold;
+}
+
+.hourWeatherWrapper [class^="hour"] p:not(.time):not(:last-child) {
+    margin-bottom: 1rem;
+}
